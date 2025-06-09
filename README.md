@@ -1,19 +1,20 @@
 # People Finder
 
-A modern web application to search for people by name, email, or company, displaying professional and social information in a clean UI.
+A modern web application to search for people by name, email, or company, built with Next.js, React, and Tailwind CSS.
 
 ## Features
-- Search by name, email, or company
-- Displays job title, location, and social links (LinkedIn, Twitter, Facebook, GitHub, website)
-- Responsive and modern UI built with React, Next.js, and Tailwind CSS
-- Robust error handling and debug information for API responses
+- Search for people using name, email, or company
+- Clean, responsive UI with cards and social links
+- Robust error handling and debug output for API responses
+- Built with a modular, scalable component structure
 
 ## Tech Stack
-- **Next.js**: React framework for server-side rendering and API routes
-- **React**: UI library for building interactive interfaces
-- **TypeScript**: Type-safe JavaScript for better maintainability
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development
-- **Lucide React**: Icon library for modern SVG icons
+- **Next.js** (App Router)
+- **React** (Functional Components & Hooks)
+- **Tailwind CSS** (Utility-first styling)
+- **TypeScript** (Type safety)
+- **Lucide React** (Icon library)
+- **People Data Labs API** (for people search)
 
 ## Getting Started
 
@@ -26,8 +27,9 @@ A modern web application to search for people by name, email, or company, displa
    ```sh
    npm install
    ```
-3. **Set up environment variables:**
-   - Copy `.env.local.example` to `.env.local` and add your People Data Labs API key:
+3. **Configure your API key:**
+   - Copy `.env.local.example` to `.env.local` (create if not present)
+   - Add your People Data Labs API key:
      ```env
      PDL_API_KEY=your_api_key_here
      ```
@@ -36,16 +38,16 @@ A modern web application to search for people by name, email, or company, displa
    ```sh
    npm run dev
    ```
-5. **Open the app:**
-   Visit [http://localhost:3000](http://localhost:3000) in your browser.
+5. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
 
 ## Author
 **Aditya Jadhav**  
 [GitHub](https://github.com/adityajadhav2004)
 
-## License
-This project is licensed under the MIT License.
+## Security
+- **API keys are never committed to the repository.**
+- Make sure to keep your `.env.local` file private and never share it publicly.
 
 ---
 
-> **Note:** This project uses a third-party API (People Data Labs). Make sure to keep your API key secure and never expose it in public repositories.
+Made with ❤️ by Aditya Jadhav
